@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-23 18:50:49.218569",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assembly",
+  "sub_assembly",
+  "item",
+  "drawing_no",
+  "raw_material_grade",
+  "inspection_report_section",
+  "inspection",
+  "inspection_attachment",
+  "inspection_remarks",
+  "inspected_by",
+  "cmm_reports_section",
+  "cmm",
+  "cmm_attachment",
+  "cmm_remarks",
+  "cmm_tested_by",
+  "vmm_reports_section",
+  "vmm",
+  "vmm_attachment",
+  "vmm_remarks",
+  "vmm_tested_by",
+  "coating_reports_section",
+  "coating",
+  "coating_attachment",
+  "coating_remarks",
+  "coating_tested_by",
+  "section_break_rujl",
+  "progress"
+ ],
+ "fields": [
+  {
+   "fieldname": "assembly",
+   "fieldtype": "Data",
+   "label": "Assembly"
+  },
+  {
+   "fieldname": "sub_assembly",
+   "fieldtype": "Data",
+   "label": "Sub Assembly"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "label": "Drawing No"
+  },
+  {
+   "fieldname": "raw_material_grade",
+   "fieldtype": "Data",
+   "label": "Raw material grade"
+  },
+  {
+   "fieldname": "inspection_report_section",
+   "fieldtype": "Section Break",
+   "label": "Inspection Report"
+  },
+  {
+   "fieldname": "inspection",
+   "fieldtype": "Select",
+   "label": "Inspection",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "inspection_attachment",
+   "fieldtype": "Attach",
+   "label": "Inspection Attachment"
+  },
+  {
+   "fieldname": "inspection_remarks",
+   "fieldtype": "Small Text",
+   "label": "Inspection Remarks"
+  },
+  {
+   "fieldname": "inspected_by",
+   "fieldtype": "Link",
+   "label": "Inspected by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "cmm_reports_section",
+   "fieldtype": "Section Break",
+   "label": "CMM Reports"
+  },
+  {
+   "fieldname": "cmm",
+   "fieldtype": "Select",
+   "label": "CMM"
+  },
+  {
+   "fieldname": "cmm_attachment",
+   "fieldtype": "Attach",
+   "label": "CMM Attachment"
+  },
+  {
+   "fieldname": "cmm_remarks",
+   "fieldtype": "Small Text",
+   "label": "CMM Remarks"
+  },
+  {
+   "fieldname": "cmm_tested_by",
+   "fieldtype": "Link",
+   "label": "CMM Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "vmm_reports_section",
+   "fieldtype": "Section Break",
+   "label": "VMM Reports"
+  },
+  {
+   "fieldname": "vmm",
+   "fieldtype": "Select",
+   "label": "VMM",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "vmm_attachment",
+   "fieldtype": "Attach",
+   "label": "VMM Attachment"
+  },
+  {
+   "fieldname": "vmm_remarks",
+   "fieldtype": "Small Text",
+   "label": "VMM Remarks"
+  },
+  {
+   "fieldname": "vmm_tested_by",
+   "fieldtype": "Link",
+   "label": "VMM Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "coating_reports_section",
+   "fieldtype": "Section Break",
+   "label": "coating Reports"
+  },
+  {
+   "fieldname": "coating",
+   "fieldtype": "Select",
+   "label": "Coating",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "coating_attachment",
+   "fieldtype": "Attach",
+   "label": "Coating Attachment"
+  },
+  {
+   "fieldname": "coating_remarks",
+   "fieldtype": "Small Text",
+   "label": "Coating Remarks"
+  },
+  {
+   "fieldname": "coating_tested_by",
+   "fieldtype": "Link",
+   "label": "coating Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_rujl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "label": "Progress"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-23 19:09:55.902645",
+ "modified_by": "Administrator",
+ "module": "NRC",
+ "name": "Final Quality Inspection",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

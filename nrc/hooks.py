@@ -247,3 +247,40 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+doctype_js = {
+    "Project" : "public/js/project.js"
+    }
+    
+fixtures = [
+    {
+        "doctype": "Custom Field", 
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Project-custom_project_monitoring",
+                    "Project-custom_overall_progress",
+                    "Project-custom_engineering_verification",
+                    "Project-custom_subcontracting_operations_management",
+                    "Project-custom_production_machine_management",
+                    "Project-custom_final_quality_inspection",
+                    "Project-custom_customer_satisfaction_report",
+                    "Project-custom_raw_material_quality_inspection",
+                    "Project-custom_updated_by",
+                    "Project-custom_project_progress_summary"
+                ]
+            ]                         
+        ]
+}
+]
+
+doc_events = {
+    "Project": {
+        "before_save": [
+            "nrc.nrc.custom_script.project.sync_project_tables",
+            "nrc.nrc.custom_script.project.calculate_project_progress",
+            "nrc.nrc.custom_script.project.calculate_overall_progress"
+        ]
+    },
+}

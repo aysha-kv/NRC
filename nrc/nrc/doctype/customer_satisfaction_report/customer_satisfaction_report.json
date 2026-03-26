@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-23 19:15:13.525604",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assembly",
+  "sub_assembly",
+  "item",
+  "drawing_no",
+  "raw_material_grade",
+  "hospitality_section",
+  "hospitality",
+  "tested_by1",
+  "communication_section",
+  "communication",
+  "tested_by2",
+  "quality_section",
+  "quality",
+  "tested_by3",
+  "management_section",
+  "column_break_xfhl",
+  "management",
+  "tested_by4",
+  "section_break_omji",
+  "total_score",
+  "average_score"
+ ],
+ "fields": [
+  {
+   "fieldname": "assembly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assembly"
+  },
+  {
+   "fieldname": "sub_assembly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Assembly"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drawing No"
+  },
+  {
+   "fieldname": "raw_material_grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Raw material grade"
+  },
+  {
+   "fieldname": "hospitality_section",
+   "fieldtype": "Section Break",
+   "label": "Hospitality"
+  },
+  {
+   "fieldname": "hospitality",
+   "fieldtype": "Float",
+   "label": "Hospitality(1-10)"
+  },
+  {
+   "fieldname": "tested_by1",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "communication_section",
+   "fieldtype": "Section Break",
+   "label": "Communication"
+  },
+  {
+   "fieldname": "communication",
+   "fieldtype": "Float",
+   "label": "Communication(1-10)"
+  },
+  {
+   "fieldname": "tested_by2",
+   "fieldtype": "Link",
+   "label": "Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "quality_section",
+   "fieldtype": "Section Break",
+   "label": "Quality"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Float",
+   "label": "Quality(1-10)"
+  },
+  {
+   "fieldname": "tested_by3",
+   "fieldtype": "Link",
+   "label": "Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "management_section",
+   "fieldtype": "Section Break",
+   "label": "Management"
+  },
+  {
+   "fieldname": "column_break_xfhl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "management",
+   "fieldtype": "Float",
+   "label": "Management (1-10)"
+  },
+  {
+   "fieldname": "tested_by4",
+   "fieldtype": "Link",
+   "label": "Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_omji",
+   "fieldtype": "Section Break",
+   "label": "Final verdict"
+  },
+  {
+   "fieldname": "total_score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total score"
+  },
+  {
+   "fieldname": "average_score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Average score"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-25 11:35:23.275122",
+ "modified_by": "Administrator",
+ "module": "NRC",
+ "name": "Customer Satisfaction Report",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

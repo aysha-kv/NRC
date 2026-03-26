@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-23 18:14:11.412170",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assembly",
+  "sub_assembly",
+  "item",
+  "drawing_no",
+  "raw_material_grade",
+  "bom_section",
+  "bom",
+  "bom_attachment",
+  "bom_remarks",
+  "bom_tested_by",
+  "jobcards_section",
+  "jobcards",
+  "jobcards_attachment",
+  "jobcards_remarks",
+  "jobcards_tested_by",
+  "cycle_time_section",
+  "cycle_time",
+  "tested_by",
+  "cutters_list_section",
+  "cutters_list",
+  "tested_by1",
+  "section_break_tkyr",
+  "progress"
+ ],
+ "fields": [
+  {
+   "fieldname": "assembly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assembly"
+  },
+  {
+   "fieldname": "sub_assembly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Assembly"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drawing No"
+  },
+  {
+   "fieldname": "raw_material_grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Raw material grade"
+  },
+  {
+   "fieldname": "bom_section",
+   "fieldtype": "Section Break",
+   "label": "Bom"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Select",
+   "label": "Bom",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "bom_attachment",
+   "fieldtype": "Attach",
+   "label": "Bom Attachment"
+  },
+  {
+   "fieldname": "bom_remarks",
+   "fieldtype": "Small Text",
+   "label": "Bom Remarks"
+  },
+  {
+   "fieldname": "bom_tested_by",
+   "fieldtype": "Link",
+   "label": "Bom Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "jobcards_section",
+   "fieldtype": "Section Break",
+   "label": "Jobcards"
+  },
+  {
+   "fieldname": "jobcards",
+   "fieldtype": "Select",
+   "label": "Jobcards",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "jobcards_attachment",
+   "fieldtype": "Attach",
+   "label": "Jobcards Attachment"
+  },
+  {
+   "fieldname": "jobcards_remarks",
+   "fieldtype": "Small Text",
+   "label": "Jobcards Remarks"
+  },
+  {
+   "fieldname": "jobcards_tested_by",
+   "fieldtype": "Link",
+   "label": "Jobcards Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "cycle_time_section",
+   "fieldtype": "Section Break",
+   "label": "Cycle Time"
+  },
+  {
+   "fieldname": "cycle_time",
+   "fieldtype": "Data",
+   "label": "Cycle Time"
+  },
+  {
+   "fieldname": "tested_by",
+   "fieldtype": "Link",
+   "label": "Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "cutters_list_section",
+   "fieldtype": "Section Break",
+   "label": "Cutters list"
+  },
+  {
+   "fieldname": "cutters_list",
+   "fieldtype": "Data",
+   "label": "Cutters list"
+  },
+  {
+   "fieldname": "tested_by1",
+   "fieldtype": "Link",
+   "label": "Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_tkyr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Progress"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-25 10:38:51.587517",
+ "modified_by": "Administrator",
+ "module": "NRC",
+ "name": "Production Machine Management",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

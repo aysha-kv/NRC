@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-23 10:43:22.408997",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assembly",
+  "sub_assembly",
+  "item",
+  "drawing_no",
+  "raw_material_grade",
+  "inidvidual_progress"
+ ],
+ "fields": [
+  {
+   "fieldname": "assembly",
+   "fieldtype": "Data",
+   "label": "Assembly"
+  },
+  {
+   "fieldname": "sub_assembly",
+   "fieldtype": "Data",
+   "label": "Sub Assembly"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "label": "Drawing No"
+  },
+  {
+   "fieldname": "inidvidual_progress",
+   "fieldtype": "Percent",
+   "label": "Inidvidual progress"
+  },
+  {
+   "fieldname": "raw_material_grade",
+   "fieldtype": "Data",
+   "label": "Raw material grade"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-24 13:19:14.701329",
+ "modified_by": "Administrator",
+ "module": "NRC",
+ "name": "Project Progress Summary",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

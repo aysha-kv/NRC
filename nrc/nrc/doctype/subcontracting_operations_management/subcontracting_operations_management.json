@@ -1,0 +1,425 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-23 17:08:13.347827",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assembly",
+  "sub_assembly",
+  "item",
+  "drawing_no",
+  "raw_material_grade",
+  "milling_section",
+  "milling",
+  "milling_attachment",
+  "milling_remarks",
+  "lathe_section",
+  "lathe",
+  "lathe_attachment",
+  "lathe_remarks",
+  "jig_boring_section",
+  "jig_boring",
+  "jig_boring_attachment",
+  "jig_boring_remarks",
+  "h_boring_section",
+  "h_boring",
+  "h_boring__attachment",
+  "h_boring__remarks",
+  "vtl_section",
+  "vtl",
+  "vtl_attachment",
+  "vtl_remarks",
+  "welding_section",
+  "welding",
+  "welding_attachment",
+  "welding_remarks",
+  "gear_cutting_section",
+  "gear_cutting",
+  "gear_cutting_attachment",
+  "gear_cutting_remarks",
+  "surface_grinding_section",
+  "surface_grinding",
+  "surface_grinding_attachment",
+  "surface_grinding_remarks",
+  "tapping_section",
+  "tapping",
+  "tapping_attachment",
+  "tapping_remarks",
+  "wirecut_section",
+  "wirecut",
+  "wirecut_attachent",
+  "wirecut_remarks",
+  "edm_section",
+  "edm",
+  "edm_attachment",
+  "edm_remarks",
+  "ht_section",
+  "ht",
+  "ht_attachment",
+  "ht_remarks",
+  "engraving_section",
+  "engraving",
+  "engraving_attachment",
+  "engraving_remarks",
+  "coating_section",
+  "coating",
+  "coating_attachment",
+  "coating_remarks",
+  "section_break_fkae",
+  "progress"
+ ],
+ "fields": [
+  {
+   "fieldname": "assembly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assembly"
+  },
+  {
+   "fieldname": "sub_assembly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Assembly"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drawing No"
+  },
+  {
+   "fieldname": "raw_material_grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Raw material grade"
+  },
+  {
+   "fieldname": "milling_section",
+   "fieldtype": "Section Break",
+   "label": "Milling"
+  },
+  {
+   "fieldname": "milling",
+   "fieldtype": "Select",
+   "label": "Milling",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "milling_attachment",
+   "fieldtype": "Attach",
+   "label": "Milling Attachment"
+  },
+  {
+   "fieldname": "milling_remarks",
+   "fieldtype": "Small Text",
+   "label": "Milling Remarks"
+  },
+  {
+   "fieldname": "lathe_section",
+   "fieldtype": "Section Break",
+   "label": "Lathe"
+  },
+  {
+   "fieldname": "lathe",
+   "fieldtype": "Select",
+   "label": "Lathe",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "lathe_attachment",
+   "fieldtype": "Attach",
+   "label": "Lathe Attachment"
+  },
+  {
+   "fieldname": "lathe_remarks",
+   "fieldtype": "Small Text",
+   "label": "Lathe Remarks"
+  },
+  {
+   "fieldname": "jig_boring_section",
+   "fieldtype": "Section Break",
+   "label": "Jig Boring"
+  },
+  {
+   "fieldname": "jig_boring",
+   "fieldtype": "Select",
+   "label": "Jig Boring",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "jig_boring_attachment",
+   "fieldtype": "Attach",
+   "label": "Jig Boring Attachment"
+  },
+  {
+   "fieldname": "jig_boring_remarks",
+   "fieldtype": "Small Text",
+   "label": "Jig Boring Remarks"
+  },
+  {
+   "fieldname": "h_boring_section",
+   "fieldtype": "Section Break",
+   "label": "H boring "
+  },
+  {
+   "fieldname": "h_boring",
+   "fieldtype": "Select",
+   "label": "H boring ",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "h_boring__attachment",
+   "fieldtype": "Attach",
+   "label": "H boring  Attachment"
+  },
+  {
+   "fieldname": "h_boring__remarks",
+   "fieldtype": "Small Text",
+   "label": "H boring  Remarks"
+  },
+  {
+   "fieldname": "vtl_section",
+   "fieldtype": "Section Break",
+   "label": "VTL"
+  },
+  {
+   "fieldname": "vtl",
+   "fieldtype": "Select",
+   "label": "VTL",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "vtl_attachment",
+   "fieldtype": "Attach",
+   "label": "VTL Attachment"
+  },
+  {
+   "fieldname": "vtl_remarks",
+   "fieldtype": "Small Text",
+   "label": "VTL Remarks"
+  },
+  {
+   "fieldname": "welding_section",
+   "fieldtype": "Section Break",
+   "label": "Welding"
+  },
+  {
+   "fieldname": "welding",
+   "fieldtype": "Select",
+   "label": "Welding",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "welding_attachment",
+   "fieldtype": "Attach",
+   "label": "Welding Attachment"
+  },
+  {
+   "fieldname": "welding_remarks",
+   "fieldtype": "Small Text",
+   "label": "Welding Remarks"
+  },
+  {
+   "fieldname": "gear_cutting_section",
+   "fieldtype": "Section Break",
+   "label": "Gear Cutting"
+  },
+  {
+   "fieldname": "gear_cutting",
+   "fieldtype": "Select",
+   "label": "Gear Cutting",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "gear_cutting_attachment",
+   "fieldtype": "Attach",
+   "label": "Gear Cutting Attachment"
+  },
+  {
+   "fieldname": "gear_cutting_remarks",
+   "fieldtype": "Small Text",
+   "label": "Gear Cutting Remarks"
+  },
+  {
+   "fieldname": "surface_grinding_section",
+   "fieldtype": "Section Break",
+   "label": "Surface grinding"
+  },
+  {
+   "fieldname": "surface_grinding_attachment",
+   "fieldtype": "Attach",
+   "label": "Surface grinding Attachment"
+  },
+  {
+   "fieldname": "surface_grinding",
+   "fieldtype": "Select",
+   "label": "Surface grinding",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "surface_grinding_remarks",
+   "fieldtype": "Small Text",
+   "label": "Surface grinding Remarks"
+  },
+  {
+   "fieldname": "tapping_section",
+   "fieldtype": "Section Break",
+   "label": "Tapping"
+  },
+  {
+   "fieldname": "tapping",
+   "fieldtype": "Select",
+   "label": "Tapping",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "tapping_attachment",
+   "fieldtype": "Attach",
+   "label": "Tapping Attachment"
+  },
+  {
+   "fieldname": "tapping_remarks",
+   "fieldtype": "Small Text",
+   "label": "Tapping Remarks"
+  },
+  {
+   "fieldname": "wirecut_section",
+   "fieldtype": "Section Break",
+   "label": "Wirecut"
+  },
+  {
+   "fieldname": "wirecut",
+   "fieldtype": "Select",
+   "label": "Wirecut",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "wirecut_attachent",
+   "fieldtype": "Attach",
+   "label": "Wirecut Attachent"
+  },
+  {
+   "fieldname": "wirecut_remarks",
+   "fieldtype": "Small Text",
+   "label": "Wirecut Remarks"
+  },
+  {
+   "fieldname": "edm_section",
+   "fieldtype": "Section Break",
+   "label": "EDM"
+  },
+  {
+   "fieldname": "edm",
+   "fieldtype": "Select",
+   "label": "EDM",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "edm_attachment",
+   "fieldtype": "Attach",
+   "label": "EDM Attachment"
+  },
+  {
+   "fieldname": "edm_remarks",
+   "fieldtype": "Small Text",
+   "label": "EDM Remarks"
+  },
+  {
+   "fieldname": "ht_section",
+   "fieldtype": "Section Break",
+   "label": "HT"
+  },
+  {
+   "fieldname": "ht",
+   "fieldtype": "Select",
+   "label": "HT",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "ht_attachment",
+   "fieldtype": "Attach",
+   "label": "HT Attachment"
+  },
+  {
+   "fieldname": "ht_remarks",
+   "fieldtype": "Small Text",
+   "label": "HT Remarks"
+  },
+  {
+   "fieldname": "engraving_section",
+   "fieldtype": "Section Break",
+   "label": "Engraving"
+  },
+  {
+   "fieldname": "engraving",
+   "fieldtype": "Select",
+   "label": "Engraving",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "engraving_attachment",
+   "fieldtype": "Attach",
+   "label": "Engraving Attachment"
+  },
+  {
+   "fieldname": "engraving_remarks",
+   "fieldtype": "Small Text",
+   "label": "Engraving Remarks"
+  },
+  {
+   "fieldname": "coating_section",
+   "fieldtype": "Section Break",
+   "label": "Coating"
+  },
+  {
+   "fieldname": "coating",
+   "fieldtype": "Select",
+   "label": "Coating",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "coating_attachment",
+   "fieldtype": "Attach",
+   "label": "Coating Attachment"
+  },
+  {
+   "fieldname": "coating_remarks",
+   "fieldtype": "Small Text",
+   "label": "Coating Remarks"
+  },
+  {
+   "fieldname": "section_break_fkae",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Progress"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-25 10:40:53.895576",
+ "modified_by": "Administrator",
+ "module": "NRC",
+ "name": "Subcontracting Operations Management",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,393 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-23 11:04:20.502240",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assembly",
+  "sub_assembly",
+  "item",
+  "drawing_no",
+  "raw_material_grade",
+  "raw_material_section",
+  "raw_material_size",
+  "attach_coc",
+  "raw_material_remarks",
+  "raw_material_tested_by",
+  "chemical_testing_section",
+  "chemical_test_status",
+  "chemical_attachment",
+  "chemical_remarks",
+  "chemical_tested_by",
+  "mechanical_testing_section",
+  "mechanical_test_status",
+  "mechanical_attachment",
+  "mechanical_remarks",
+  "mechanical_tested_by",
+  "hardness_testing_section",
+  "hardness_test_status",
+  "hardness_attachment",
+  "hardness_remarks",
+  "hardness_tested_by",
+  "micro_testing_section",
+  "micro_test_status",
+  "micro_attachment",
+  "micro_remarks",
+  "micro_tested_by",
+  "macro_testing_section",
+  "macro_test_status",
+  "macro_attachment",
+  "macro_remarks",
+  "macro_tested_by",
+  "inclusion_testing_section",
+  "inclusion__testing_status",
+  "inclusion_attachment",
+  "inclusion_remarks",
+  "inclusion_tested_by",
+  "grian_flow_testing_section",
+  "grian_flow_test_status",
+  "grian_flow_attachment",
+  "grian_flow_remarks",
+  "grian_flow_tested_by",
+  "grain_size_testing_section",
+  "grain_size_test_status",
+  "grain_size_attachment",
+  "grain_size_remarks",
+  "grain_size_tested_by",
+  "nmir_testing_section",
+  "nmir_test_status",
+  "nmir_attachment",
+  "nmir_remarks",
+  "nmir_tested_by",
+  "section_break_slqn",
+  "progress"
+ ],
+ "fields": [
+  {
+   "fieldname": "assembly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assembly"
+  },
+  {
+   "fieldname": "sub_assembly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Assembly"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Drawing No"
+  },
+  {
+   "fieldname": "raw_material_grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Raw material grade"
+  },
+  {
+   "fieldname": "raw_material_size",
+   "fieldtype": "Data",
+   "label": "Raw material size"
+  },
+  {
+   "fieldname": "chemical_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Chemical Testing"
+  },
+  {
+   "fieldname": "chemical_test_status",
+   "fieldtype": "Select",
+   "label": "Chemical Test Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "chemical_attachment",
+   "fieldtype": "Attach",
+   "label": "Chemical Attachment"
+  },
+  {
+   "fieldname": "chemical_remarks",
+   "fieldtype": "Small Text",
+   "label": "Chemical Remarks"
+  },
+  {
+   "fieldname": "chemical_tested_by",
+   "fieldtype": "Link",
+   "label": "Chemical Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "attach_coc",
+   "fieldtype": "Attach",
+   "label": "Attach COC"
+  },
+  {
+   "fieldname": "raw_material_section",
+   "fieldtype": "Section Break",
+   "label": "Raw Material"
+  },
+  {
+   "fieldname": "raw_material_remarks",
+   "fieldtype": "Small Text",
+   "label": "Raw Material Remarks"
+  },
+  {
+   "fieldname": "raw_material_tested_by",
+   "fieldtype": "Link",
+   "label": "Raw Material Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "mechanical_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Mechanical Testing"
+  },
+  {
+   "fieldname": "mechanical_test_status",
+   "fieldtype": "Select",
+   "label": "Mechanical Test Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "mechanical_attachment",
+   "fieldtype": "Attach",
+   "label": "Mechanical Attachment"
+  },
+  {
+   "fieldname": "mechanical_remarks",
+   "fieldtype": "Small Text",
+   "label": "Mechanical Remarks"
+  },
+  {
+   "fieldname": "mechanical_tested_by",
+   "fieldtype": "Link",
+   "label": "Mechanical Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "hardness_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Hardness Testing"
+  },
+  {
+   "fieldname": "hardness_test_status",
+   "fieldtype": "Select",
+   "label": "Hardness Test Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "hardness_attachment",
+   "fieldtype": "Attach",
+   "label": "Hardness Attachment"
+  },
+  {
+   "fieldname": "hardness_remarks",
+   "fieldtype": "Small Text",
+   "label": "Hardness Remarks"
+  },
+  {
+   "fieldname": "hardness_tested_by",
+   "fieldtype": "Link",
+   "label": "Hardness Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "micro_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Micro Testing"
+  },
+  {
+   "fieldname": "micro_test_status",
+   "fieldtype": "Select",
+   "label": "Micro Test Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "micro_attachment",
+   "fieldtype": "Attach",
+   "label": "Micro Attachment"
+  },
+  {
+   "fieldname": "micro_remarks",
+   "fieldtype": "Small Text",
+   "label": "Micro Remarks"
+  },
+  {
+   "fieldname": "micro_tested_by",
+   "fieldtype": "Link",
+   "label": "Micro Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "macro_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Macro Testing"
+  },
+  {
+   "fieldname": "macro_test_status",
+   "fieldtype": "Select",
+   "label": "Macro Test Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "macro_attachment",
+   "fieldtype": "Attach",
+   "label": "Macro Attachment"
+  },
+  {
+   "fieldname": "macro_remarks",
+   "fieldtype": "Small Text",
+   "label": "Macro Remarks"
+  },
+  {
+   "fieldname": "macro_tested_by",
+   "fieldtype": "Link",
+   "label": "Macro Tested By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "inclusion_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Inclusion Testing"
+  },
+  {
+   "fieldname": "inclusion__testing_status",
+   "fieldtype": "Select",
+   "label": "Inclusion  Testing Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "inclusion_attachment",
+   "fieldtype": "Attach",
+   "label": "Inclusion Attachment"
+  },
+  {
+   "fieldname": "inclusion_remarks",
+   "fieldtype": "Small Text",
+   "label": "Inclusion Remarks"
+  },
+  {
+   "fieldname": "inclusion_tested_by",
+   "fieldtype": "Link",
+   "label": "Inclusion Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "grian_flow_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Grian Flow Testing"
+  },
+  {
+   "fieldname": "grian_flow_test_status",
+   "fieldtype": "Select",
+   "label": "Grian Flow Test Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "grian_flow_attachment",
+   "fieldtype": "Attach",
+   "label": "Grian Flow Attachment"
+  },
+  {
+   "fieldname": "grian_flow_remarks",
+   "fieldtype": "Small Text",
+   "label": "Grian Flow Remarks"
+  },
+  {
+   "fieldname": "grian_flow_tested_by",
+   "fieldtype": "Link",
+   "label": "Grian Flow Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "grain_size_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Grain size Testing"
+  },
+  {
+   "fieldname": "grain_size_test_status",
+   "fieldtype": "Select",
+   "label": "Grain Size Test Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "grain_size_attachment",
+   "fieldtype": "Attach",
+   "label": "Grain Size Attachment"
+  },
+  {
+   "fieldname": "grain_size_remarks",
+   "fieldtype": "Small Text",
+   "label": "Grain Size Remarks"
+  },
+  {
+   "fieldname": "grain_size_tested_by",
+   "fieldtype": "Link",
+   "label": "Grain Size Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "nmir_testing_section",
+   "fieldtype": "Section Break",
+   "label": "Nmir Testing"
+  },
+  {
+   "fieldname": "nmir_test_status",
+   "fieldtype": "Select",
+   "label": "Nmir Test Status",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "nmir_attachment",
+   "fieldtype": "Attach",
+   "label": "Nmir Attachment"
+  },
+  {
+   "fieldname": "nmir_remarks",
+   "fieldtype": "Small Text",
+   "label": "Nmir Remarks"
+  },
+  {
+   "fieldname": "nmir_tested_by",
+   "fieldtype": "Link",
+   "label": "Nmir Tested by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_slqn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Progress"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-25 10:41:40.922852",
+ "modified_by": "Administrator",
+ "module": "NRC",
+ "name": "Raw Material Quality Inspection",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
