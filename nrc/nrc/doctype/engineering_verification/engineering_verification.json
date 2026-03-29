@@ -51,6 +51,7 @@
    "label": "Drawing No"
   },
   {
+   "columns": 1,
    "fieldname": "raw_material_grade",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -115,6 +116,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "columns": 1,
    "fieldname": "progress",
    "fieldtype": "Percent",
    "in_list_view": 1,
@@ -125,8 +127,8 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-25 10:39:30.037965",
- "modified_by": "Administrator",
+ "modified": "2026-03-29 15:19:25.463837",
+ "modified_by": "ayshakv07@gamil.com",
  "module": "NRC",
  "name": "Engineering Verification",
  "owner": "Administrator",

@@ -1,0 +1,42 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<h2>My Projects</h2>
+
+<div id="project-list">Loading...</div>
+
+<script>
+frappe.ready(function () {
+
+    frappe.call({
+        method: "nrc.api.myprojects.get_user_projects",
+        callback: function (r) {
+
+            let data = r.message || [];
+            let html = "";
+
+            if (!data.length) {
+                html = "<p>No projects found</p>";
+            } else {
+                data.forEach(p => {
+                    html += `
+                        <div style="padding:10px; border-bottom:1px solid #ddd;">
+                            <a href="/myproject?name=${p.name}">
+                                <b>${p.project_name}</b>
+                            </a><br>
+                            Status: ${p.status}<br>
+                            Progress: ${p.percent_complete || 0}%
+                        </div>
+                    `;
+                });
+            }
+
+            document.getElementById("project-list").innerHTML = html;
+        }
+    });
+
+});
+</script>
+
+{% endblock %}

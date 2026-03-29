@@ -250,7 +250,7 @@ app_license = "mit"
 doctype_js = {
     "Project" : "public/js/project.js"
     }
-    
+
 fixtures = [
     {
         "doctype": "Custom Field", 
@@ -284,3 +284,11 @@ doc_events = {
         ]
     },
 }
+
+portal_menu_items = [
+    {
+        "title": "My Projects",
+        "route": "/myprojects",
+        "role": "Customer"
+    }
+]

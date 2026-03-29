@@ -49,12 +49,14 @@
    "label": "Item"
   },
   {
+   "columns": 1,
    "fieldname": "drawing_no",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Drawing No"
   },
   {
+   "columns": 1,
    "fieldname": "raw_material_grade",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -134,12 +136,14 @@
    "label": "Final verdict"
   },
   {
+   "columns": 1,
    "fieldname": "total_score",
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "Total score"
   },
   {
+   "columns": 1,
    "fieldname": "average_score",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -150,8 +154,8 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-25 11:35:23.275122",
- "modified_by": "Administrator",
+ "modified": "2026-03-29 15:24:16.673570",
+ "modified_by": "ayshakv07@gamil.com",
  "module": "NRC",
  "name": "Customer Satisfaction Report",
  "owner": "Administrator",

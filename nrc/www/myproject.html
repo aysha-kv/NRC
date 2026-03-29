@@ -1,0 +1,114 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<h2>Project Details</h2>
+
+<div id="project-details">Loading...</div>
+
+<h3>Tasks</h3>
+<div id="task-list"></div>
+
+<h3>Timesheets</h3>
+<div id="timesheet-list"></div>
+
+<h3>Attachments</h3>
+<div id="attachment-list"></div>
+
+<h3>Upload File</h3>
+<input type="file" id="file-upload">
+<button onclick="uploadFile()">Upload</button>
+
+<script>
+frappe.ready(function () {
+
+    const project = new URLSearchParams(window.location.search).get("name");
+
+    frappe.call({
+        method: "nrc.api.myprojects.get_project_details",
+        args: { project: project },
+        callback: function (r) {
+            let data = r.message;
+
+            if (!data) {
+                document.getElementById("project-details").innerHTML = "No data";
+                return;
+            }
+
+            document.getElementById("project-details").innerHTML = `
+                <b>${data.project_name}</b><br>
+                Status: ${data.status}<br>
+                Progress: ${data.percent_complete || 0}%
+            `;
+
+            let tasks_html = "";
+            (data.tasks || []).forEach(t => {
+                tasks_html += `<div>${t.subject} - ${t.status}</div>`;
+            });
+            document.getElementById("task-list").innerHTML = tasks_html || "No tasks";
+
+            let ts_html = "";
+            (data.timesheets || []).forEach(ts => {
+                ts_html += `<div>${ts.employee} - ${ts.total_hours} hrs</div>`;
+            });
+            document.getElementById("timesheet-list").innerHTML = ts_html || "No timesheets";
+
+            let attach_html = "";
+            (data.attachments || []).forEach(f => {
+                attach_html += `<div><a href="${f.file_url}" target="_blank">${f.file_name}</a></div>`;
+            });
+            document.getElementById("attachment-list").innerHTML = attach_html || "No attachments";
+        }
+    });
+});
+
+
+function uploadFile() {
+    const fileInput = document.getElementById("file-upload");
+    const file = fileInput.files[0];
+
+    if (!file) {
+        frappe.msgprint("Please select a file");
+        return;
+    }
+
+    const project = new URLSearchParams(window.location.search).get("name");
+
+    let formData = new FormData();
+    formData.append("file", file);
+    formData.append("doctype", "Project");
+    formData.append("docname", project);
+    formData.append("is_private", 1);
+
+    fetch("/api/method/upload_file", {
+        method: "POST",
+        body: formData,
+        credentials: "include",
+        headers: {
+            "X-Frappe-CSRF-Token": frappe.csrf_token
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.message) {
+            frappe.msgprint("File uploaded successfully");
+
+            let f = data.message;
+
+            let html = `<div><a href="${f.file_url}" target="_blank">${f.file_name}</a></div>`;
+            document.getElementById("attachment-list").innerHTML += html;
+
+            fileInput.value = "";
+        } else {
+            frappe.msgprint("Upload failed");
+            console.error(data);
+        }
+    })
+    .catch(err => {
+        console.error(err);
+        frappe.msgprint("Upload error");
+    });
+}
+</script>
+
+{% endblock %}

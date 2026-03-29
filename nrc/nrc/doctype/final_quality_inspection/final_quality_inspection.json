@@ -39,26 +39,32 @@
   {
    "fieldname": "assembly",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Assembly"
   },
   {
    "fieldname": "sub_assembly",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Sub Assembly"
   },
   {
    "fieldname": "item",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Item"
   },
   {
    "fieldname": "drawing_no",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Drawing No"
   },
   {
+   "columns": 1,
    "fieldname": "raw_material_grade",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Raw material grade"
   },
   {
@@ -173,8 +179,10 @@
    "fieldtype": "Section Break"
   },
   {
+   "columns": 1,
    "fieldname": "progress",
    "fieldtype": "Percent",
+   "in_list_view": 1,
    "label": "Progress"
   }
  ],
@@ -182,8 +190,8 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-23 19:09:55.902645",
- "modified_by": "Administrator",
+ "modified": "2026-03-29 15:20:33.684974",
+ "modified_by": "ayshakv07@gamil.com",
  "module": "NRC",
  "name": "Final Quality Inspection",
  "owner": "Administrator",
