@@ -66,15 +66,12 @@ def sync_project_tables(doc, method):
     for table in target_tables:
         target_rows = doc.get(table) or []
 
-        # 1️⃣ Handle Deletion (remove extra rows)
         while len(target_rows) > len(source_rows):
             target_rows.pop()
 
-        # 2️⃣ Handle Add + Update
         for i, src in enumerate(source_rows):
 
             if i < len(target_rows):
-                # UPDATE existing row (only specific fields)
                 target_rows[i].assembly = src.assembly
                 target_rows[i].sub_assembly = src.sub_assembly
                 target_rows[i].item = src.item
@@ -82,7 +79,6 @@ def sync_project_tables(doc, method):
                 target_rows[i].raw_material_grade = src.raw_material_grade
 
             else:
-                # ADD new row
                 doc.append(table, {
                     "assembly": src.assembly,
                     "sub_assembly": src.sub_assembly,
